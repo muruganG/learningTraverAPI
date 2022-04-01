@@ -1,0 +1,6 @@
+<p>hero works!</p>
+
+<input type="text" change="filterText(filter.value)" #filter />
+<ul>
+    <li *ngFor="let hero of heros">{{hero.name | heighLight:hero.name}}</li>
+</ul>
